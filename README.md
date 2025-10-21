@@ -1,2 +1,4 @@
 # Vietnam_Traffic_sign_detection
-Thu thập tăng cường dữ liệu, thực nghiệm so sánh các phương pháp để tạo ra model phục vụ cho biệt phát hiện biển báo giao thông ở Việt Nam
+## Thu thập tăng cường dữ liệu, thực nghiệm so sánh các phương pháp để tạo ra model phục vụ cho biệt phát hiện biển báo giao thông ở Việt Nam.
+
+Nghiên cứu này thực hiện để so sánh hiệu suất giữa 2 kiến trúc deep learning tiên tiến: YOLOv8 (You Only Look Once version 8) và Faster R-CNN (Region-based Convolutional Neural Network) trong việc phát hiện và phân loại biển báo giao thông Việt Nam. Cả hai đều được đánh giá dựa trên nhiều tiêu chí quan trọng như mAP@50, mAP@0.5:0.95, FPS,…. Bài báo sử dụng tập dữ liệu Vietnamese traffic signs detection and recognition [1] với 1,170 hình ảnh có độ phân giải 1622x626 pixels chia 29 biển báo giao thông khác nhau. Augmentation bằng albumentations (xoay, lật, độ sáng, làm mờ, mưa, …) được 10,170 hình ảnh. Kết quả cho thấy YOLOv8 có độ chính xác trung bình (mAP) đạt 92,68%, Precision đạt 95,83%, 45 FPS cao vượt trội so với các mô hình khác phù hợp để triển khai trong thực tế và real-time.
